@@ -1,0 +1,140 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+
+	overflow-X: hidden;
+	@extend %roboto;
+	color: $black;
+	font-size: 22px;
+		line-height: 137%;
+		letter-spacing: 1.49138px;
+}
+
+ul,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	transition: all .2s;
+
+}
+
+p {
+	padding: 0;
+	margin: 0;
+
+}
+
+figure {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1405px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+}
+
+.section {
+	position: relative;
+	padding: 100px 0;
+	overflow: inherit;
+	&::after {
+		@extend %content;
+		top: 0;
+		bottom: 0;
+		right:0;
+		left: 0;
+		z-index: -10;
+	}
+}
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	outline: none;
+
+}
+
+.logo {
+	&__img {
+		width: 70px;
+		object-fit: cover;
+	}
+}
+
+.btn {
+	display: inline-block;
+	width: auto;
+	cursor: pointer;
+	transition: $transition;
+	font-size: 18px;
+	background-color: rgb(229, 242, 230);
+	color: rgb(75, 101, 77);
+	padding: 12px 25px;
+	border: 3px solid rgb(62, 77, 57);
+	border-radius: 100px;
+	transition: $transition;
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		background-color: rgb(106, 170, 105);
+		color: #fff;
+	}
+}
+.title {
+		line-height: 116%;
+		margin-bottom: 20px;
+		font-size: 53px;
+	  
+}
+.subtitle {
+	line-height: 114%;
+font-size: 26px;
+margin-bottom: 21px;
+}
+.light-text {
+	color: #fff;
+}
+.text {
+	line-height: 137%;
+}
+.img-bg {
+	@extend %content;
+		
+		z-index: -2;
+		background-size: contain;
+background-repeat: no-repeat;
+background-position-y: center;
+}

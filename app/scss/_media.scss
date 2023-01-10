@@ -1,0 +1,199 @@
+
+
+@media(max-width: 1200px) {
+	body {
+		font-size: 19px;
+	}
+.title {
+	font-size: 47px;
+}
+.subtitle {
+	font-size: 24px;
+}
+.header__title {
+	font-size: 58px;
+}
+.header__text {
+	font-size: 25px;
+}
+}
+@media(max-width: 992px) {
+	.about__inner {
+flex-direction: column;
+	}
+	.about__inner-img{
+		order: 2;
+		margin: 0 auto;
+		width: 40%;
+	}
+	.about__content {
+		width: auto;
+		margin-left: 0;
+	  }
+	  
+	  .section {
+		padding: 60px 0;
+	  }
+	  .project-slider {
+		width: 80%;
+		margin: 0 auto;
+	  }
+	  .project-slider__img {
+		
+		height: 340px;
+	  }
+	  .project-slider__title {
+		margin-left: 0;
+		text-align: center;
+	  }	  
+	  .join__map {
+		order: 2;
+	  }
+	  .header__intro::after {
+		background-position-x: center;
+height: 348px;
+	  }
+}
+@media(max-width: 768px) {
+	.menu__list {
+		position: absolute;
+		top: 0;
+		right: 20px;
+		border-radius: 10px;
+		flex-direction: column;
+		margin: 85px 0 0 15px;
+		padding: 30px 20px 20px;
+		background-color: rgba(#fff, .9);
+		transform: translateX(1000%);
+		transition: all .5s cubic-bezier(.39, .58, .57, 1);
+		z-index: 9;
+	}
+
+
+	.menu__list.open {
+		transform: translateX(0);
+	}
+
+	.menu__list-item {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.menu__btn-line {
+		position: absolute;
+		width: 26px;
+		height: 4px;
+		background-color: $black;
+		display: inline-block;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		border-radius: 4px;
+		transition: all .1s;
+	}
+
+	.menu__btn {
+		position: relative;
+		width: 32px;
+		height: 20px;
+		z-index: 10;
+		cursor: pointer;
+
+		&::after,
+		&::before {
+			position: absolute;
+			content: '';
+			height: 4px;
+			right: 0;
+			left: 0;
+			background-color: $black;
+			border-radius: 4px;
+		}
+
+		&::after {
+			top: 0;
+		}
+
+		&::before {
+			bottom: 0;
+			width: 22px;
+		}
+	}
+
+	.menu__btn.open {
+		&::after {
+			transform: rotate(135deg) translate(6px, -5px);
+			transition: $transition;
+		}
+
+		&::before {
+			transform: rotate(-135deg) translate(6px, 5px);
+			width: 32px;
+			transition: $transition;
+		}
+
+		.menu__btn-line {
+			opacity: 0;
+			transform: rotate(35deg);
+		}
+	}
+
+	.header__title {
+		font-size: 45px;
+		margin: 0 0 21px;
+	}
+
+	.header__text {
+		font-size: 20px;
+		
+	}
+.header__img-bg {
+	height: 68%;
+max-width: 425px;
+opacity: 0.5;
+}
+.footer__img-bg {
+	
+	display: none;
+}
+.project__content {
+	margin: 0 0 30px 0;
+  }
+	
+}
+@media(max-width: 520px) {
+	.footer__inner {
+		flex-direction: column;
+	}
+	.section {
+		padding: 44px 0;
+	  }
+	  .project__inner {
+		display: block;
+	  }
+	  .join__inner {
+		display: flex;
+		flex-direction: column;
+	  }
+	  .project-slider {
+		width: 100%;
+		padding: 0 32px;
+	  }
+	  .project .slick-arrow {
+		width: 27px;
+		height: 17px;
+	  }
+	  .title {
+		font-size: 39px;
+	  }
+	  .about__img-bg {
+		
+		display: none;
+	  }
+	  .header__intro {
+		padding: 0 0 229px 0 ;
+	  }
+	  .join__title {
+		margin-bottom: 22px;
+	  }
+}

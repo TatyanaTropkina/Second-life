@@ -1,0 +1,26 @@
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+%roboto {
+	font-family: "Roboto-Regular", serif;
+}
+
+%roboto-italic {
+	font-family: "Roboto-italic", serif;
+}
+
+%content {
+	position: absolute;
+	content: '';
+}
+
+$text: #172345;
+$dark-grey: #2f362e;
+$black: rgba(19, 19, 19, 0.851);
+
+$transition: all .2s;
