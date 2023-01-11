@@ -15,7 +15,7 @@ This is a pet project using flexbox, grid and jquery.
 
 ### Screenshot
 
-![](images/Screenshot.png)
+![](Screenshot.png)
 
 ### Links
 
