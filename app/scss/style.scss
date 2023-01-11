@@ -8,6 +8,7 @@
 
 .header {
 	height: 100vh;
+	min-height: 764px;
 	position: relative;	
 	&::after {
 		@extend %content;
@@ -27,30 +28,21 @@
 
 	}
 
-
 	&__intro {
 		text-align: center;
 		color: #fff;
-		height: calc(100vh - 74px);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 0 0 350px 0;
-		&::after {
-			@extend %content;
-background-image: url(../images/fon.png);
-background-size: contain;
-width: 100%;
-bottom: 0;
-z-index: -1;
-background-repeat: no-repeat;
-background-position-y: bottom;
-background-position-x: right;
-height: 400px;
-
-		}
+		padding-bottom: 400px;
 	}
+&__img {
+	object-fit: contain;
+	object-position: right bottom;
+	height: 45%;
+	position: absolute;
+	right: -50px;
+	bottom: 0;
+	z-index: -1;
+	
+}
 
 	&__title {
 		font-size: 62px;
@@ -70,14 +62,6 @@ height: 400px;
 
 	}
 
-
-	&__content-img {
-		max-width: 600px;
-		object-fit: cover;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-	}
 }
 
 .menu {
@@ -186,12 +170,12 @@ margin-bottom: 6px;
 	}
 	&__img-bg {
 		background-image: url(../images/l5.png);
-		top: -67%;
+		top: -61%;
 transform: scale(1,-1) rotate(76deg);
 left: -56px;
 width: 50%;
 height: 100%;
-max-width: 601px;
+max-width: 501px;
 opacity: 0.8;
 	}
 
@@ -215,7 +199,7 @@ opacity: 0.8;
 	}
 	&__inner {
 		display:grid;
-		grid-template-columns: repeat(auto-fit, minmax(496px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(472px, 1fr));
 		grid-gap: 20px;
 	}
 &__btn {
@@ -304,7 +288,7 @@ object-position: center;
 	
 	&__inner {
 		display:grid;
-		grid-template-columns: repeat(auto-fit, minmax(496px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(472px, 1fr));
 		grid-gap: 20px;
 	}
 	&__title {
